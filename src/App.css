@@ -1,0 +1,17 @@
+
+
+#abcd{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Optionally set height for vertical centering */
+}

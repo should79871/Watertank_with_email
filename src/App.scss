@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkbox {
+  width: 20rem;
+  height: 5rem;
+  background-color: #eee;
+  position: relative;
+  border-radius: 20px;
+
+  &__input {
+    appearance: none;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 20px;
+    outline: none;
+
+    &::before,
+    &::after {
+      font-size: 1.2rem;
+      width: 10rem;
+      height: 5rem;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      background-color: #eee;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &::after {
+      content: "OFF";
+      left: 0;
+    }
+
+    &::before {
+      content: "ON";
+      right: 0;
+    }
+  }
+
+  &__input:checked + &__label {
+    transform: translate(100%, -50%);
+  }
+
+  &__input:not(:checked) + &__label {
+    transform: translate(0, -50%);
+  }
+
+  &__label {
+    width: 10rem;
+    height: 5rem;
+    border-radius: 20px;
+    border: 2px solid skyblue;
+    background-color: rgba(30, 114, 209, .3);
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    transition: all .3s ease-in;
+  }
+}
+
+#checkbox:hover{
+  cursor: pointer;
+}
+#abcd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; // Optionally set height for vertical centering
+  
+}
+
+#ab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin: 10px 0px;// Optionally set height for vertical centering
+}
+
+

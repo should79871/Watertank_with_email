@@ -1,0 +1,95 @@
+#main{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+
+
+let spn = document.getElementById("spn");
+let water_level = document.getElementById("water_level")
+spn.innerHTML = " " + i + " %";
+water_level.style.height = i * 4 + "px"
+
+*/
+body{
+    background-color: #0000003b;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80px;
+    background-color: #d1e2ff;
+
+}
+header nav p{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    height:90vh;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.container{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+} 
+
+#box{
+    height: 400px;
+    width:250px;  /* Fixed width */
+    border-bottom:2px solid black;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items:end;
+
+  
+    
+    
+}
+
+.water{ 
+    width:100%;  /* Fixed width */
+    
+    height:300px; /* 4x */
+    background-color: #9edaf3;;
+    display: inline-block;
+    box-shadow: inset 0px -10px 16px 8px #82c8e4;
+
+}
+
+/* Water wave cc */
+svg {
+    display: block;
+    margin: 0 auto;
+   position: relative;
+   top:4px;
+    display: inline-block;
+    
+}
+
+.water{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* Buttons */
+
+button{
+    height:40px;
+    width:100px;
+    text-align: center;
+}
